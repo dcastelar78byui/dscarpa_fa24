@@ -1,7 +1,7 @@
 ---
 title: "Client Report - Introduction"
 subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+author: "Diego Scarpa"
 format:
   html:
     self-contained: true
@@ -37,27 +37,30 @@ import numpy as np
 import plotly.express as px
 ```
 
-
-### Elevator pitch
-
-_TODO:paste your elevator pitch here_
-_REMOVE ME: ELEVATOR PITCH IS A SHORT (3-5 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._
-
 ```{python}
 #| label: project-data
 #| code-summary: Read and format project data
 # Include and execute your code here
-df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
+!pip install palmerpenguins
+!pip install setuptools
+
+from palmerpenguins import load_penguins
+from lets_plot import *
+
+LetsPlot.setup_html(isolated_frame=True)
+penguins = load_penguins()
+df= pd.DataFrame(penguins)
 ```
 
 
 ### QUESTION|TASK 1
 
-__TODO:COPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE__
+A short Elevator Pitch
 
-_TODO: type your results and analysis here_
+The analysis shows clear differences in BODY MASS and FLIPPER LENGHT among the three penguin species.
+     Gentoo Penguins: They are the largest in body mass.
+     Adelie and Chinstrap Penguins: They have similar sizes.
 
-_TODO and REMOVE: remove any cells not relavent to this question_
 
 ```{python}
 #| label: Q1
@@ -65,6 +68,22 @@ _TODO and REMOVE: remove any cells not relavent to this question_
 # Include and execute your code here
 # Include import statements here 
 # Include reading data statements here
+
+!pip install palmerpenguins
+!pip install setuptools
+
+import pandas as pd
+import numpy as np
+import pandas as pd
+from palmerpenguins import load_penguins
+from lets_plot import *
+
+LetsPlot.setup_html(isolated_frame=True)
+
+penguins = load_penguins()
+
+
+
 
 ```
 
@@ -74,14 +93,29 @@ _TODO and REMOVE: remove any cells not relavent to this question_
 #| fig-cap: "My useless chart"
 #| fig-align: center
 # Include and execute your code here
-chart = px.scatter(df.head(200),
-    x="name", 
-    y="AK"
+(
+    ggplot(data=penguins, mapping=aes(x="flipper_length_mm", y="body_mass_g"))
+
+    + geom_point(aes(color="species", shape="species"), size=3, alpha=0.7)
+
+    + geom_smooth(aes(color="species"), method="lm", se=True) 
+
+    + labs(
+        title="Body Mass and Flipper Length",
+        subtitle="Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
+        x="Flipper Length (mm)",
+        y="Body Mass (g)",
+        color="Species",
+        shape="Species",
+    )
+    + theme_minimal()
+      
+    + scale_color_brewer(palette="Dark2")  
 )
-chart
+
 ```
 
-_REMOVE ME: the output of any code cell will appear below the cell, including tables and charts_
+This graph shows the relationship between flipper length (flipper_length_mm) and body mass (body_mass_g) of three species of penguins: Adelie, Chinstrap, and Gentoo.
 
 ```{python}
 #| label: Q1-table
@@ -89,18 +123,12 @@ _REMOVE ME: the output of any code cell will appear below the cell, including ta
 #| tbl-cap: "Not much of a table"
 #| tbl-cap-location: top
 # Include and execute your code here
-mydat = df.head(1000)\
-    .groupby('year')\
-    .sum()\
-    .reset_index()\
-    .tail(10)\
-    .filter(["year", "AK","AR"])
 
-display(mydat)
+penguins
 
 ```
 
-_REMOVE ME: the output of any code cell will appear below the cell, including tables and charts_
+
 
 ### QUESTION|TASK 2
 
@@ -124,11 +152,12 @@ _TODO and REMOVE: remove any cells not relavent to this question_
 #| fig-cap: "My useless chart"
 #| fig-align: center
 # Include and execute your code here
-chart = px.bar(df.head(200),
-    x="name", 
-    y="AK"
-)
-chart.show()
+
+#chart = px.bar(df.head(200),
+#    x="name", 
+#    y="AK"
+#)
+#chart.show()
 ```
 
 _REMOVE ME: the output of any code cell will appear below the cell, including tables and charts_
@@ -139,14 +168,14 @@ _REMOVE ME: the output of any code cell will appear below the cell, including ta
 #| tbl-cap: "Not much of a table"
 #| tbl-cap-location: top
 # Include and execute your code here
-mydat = df.head(1000)\
-    .groupby('year')\
-    .sum()\
-    .reset_index()\
-    .tail(10)\
-    .filter(["year", "AK","AR"])
+#mydat = df.head(1000)\
+#    .groupby('year')\
+#    .sum()\
+#    .reset_index()\
+#    .tail(10)\
+#    .filter(["year", "AK","AR"])
 
-display(mydat)
+#display(mydat)
 
 ```
 
@@ -174,11 +203,11 @@ _TODO and REMOVE: remove any cells not relavent to this question_
 #| fig-cap: "My useless chart"
 #| fig-align: center
 # Include and execute your code here
-chart = px.bar(df.head(200),
-    x="name", 
-    y="AK"
-)
-chart.show()
+#chart = px.bar(df.head(200),
+#    x="name", 
+#    y="AK"
+#)
+#chart.show()
 ```
 
 _REMOVE ME: the output of any code cell will appear below the cell, including tables and charts_
@@ -189,14 +218,14 @@ _REMOVE ME: the output of any code cell will appear below the cell, including ta
 #| tbl-cap: "Not much of a table"
 #| tbl-cap-location: top
 # Include and execute your code here
-mydat = df.head(1000)\
-    .groupby('year')\
-    .sum()\
-    .reset_index()\
-    .tail(10)\
-    .filter(["year", "AK","AR"])
-
-display(mydat)
+#mydat = df.head(1000)\
+#    .groupby('year')\
+#    .sum()\
+#    .reset_index()\
+#    .tail(10)\
+#    .filter(["year", "AK","AR"])
+#
+#display(mydat)
 
 ``` 
 _REMOVE ME: the output of any code cell will appear below the cell, including tables and charts_ -->

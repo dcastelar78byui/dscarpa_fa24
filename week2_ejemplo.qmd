@@ -1,0 +1,120 @@
+---
+title: "Untitled"
+format: html
+---
+
+```{python}
+!pip install palmerpenguins
+!pip install setuptools
+
+import pandas as pd
+import numpy as np
+import pandas as pd
+from palmerpenguins import load_penguins
+from lets_plot import *
+
+LetsPlot.setup_html(isolated_frame=True)
+```
+
+```{python}
+penguins = load_penguins()
+penguins
+```
+
+```{python}
+penguins.head(10)
+```
+
+```{python}
+(
+    ggplot(data=penguins, 
+    mapping=aes(x="flipper_length_mm", y="body_mass_g"))
+    + geom_point()
+)
+```
+
+```{python}
+(
+    ggplot(
+        data=penguins,
+        mapping=aes(x="flipper_length_mm", y="body_mass_g", color="species"),
+    )
+    + geom_point()
+)
+```
+
+```{python}
+(
+    ggplot(
+        data=penguins,
+        mapping=aes(x="flipper_length_mm", y="body_mass_g", color="species"),
+    )
+    + geom_point()
+    + geom_smooth(method="lm")
+)
+
+```
+
+```{python}
+(
+    ggplot(data=penguins, mapping=aes(x="flipper_length_mm", y="body_mass_g"))
+    + geom_point(mapping=aes(color="species"))
+    + geom_smooth(method="lm")
+)
+```
+```{python}
+(
+    ggplot(data=penguins, mapping=aes(x="flipper_length_mm", y="body_mass_g"))
+    + geom_point(mapping=aes(color="species", shape="species"))
+    + geom_smooth(method="lm")
+)
+```
+```{python}
+(
+    ggplot(data=penguins, mapping=aes(x="flipper_length_mm", y="body_mass_g"))
+    + geom_point(aes(color="species", shape="species"))
+    + geom_smooth(method="lm")
+    + labs(
+        title="Body mass and flipper length",
+        subtitle="Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
+        x="Flipper length (mm)",
+        y="Body mass (g)",
+        color="Species",
+        shape="Species",
+    )
+)
+```
+```{python}
+from lets_plot import *
+
+
+(
+    ggplot(data=penguins, mapping=aes(x="flipper_length_mm", y="body_mass_g"))
+
+    + geom_point(aes(color="species", shape="species"), size=3, alpha=0.7)
+
+    + geom_smooth(aes(color="species"), method="lm", se=True) 
+
+    + labs(
+        title="Body Mass and Flipper Length",
+        subtitle="Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
+        x="Flipper Length (mm)",
+        y="Body Mass (g)",
+        color="Species",
+        shape="Species",
+    )
+    + theme_minimal()
+
+    + scale_color_brewer(palette="Dark2")  
+)
+
+
+
+
+```
+```{python}
+```{python}
+```{python}
+```{python}
+```{python}
+```{python}
