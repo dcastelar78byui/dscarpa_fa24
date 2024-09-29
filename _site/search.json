@@ -1,361 +1,5 @@
 [
   {
-    "objectID": "competition.html",
-    "href": "competition.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics\n#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See ?@fig-bill-sizes for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
-  },
-  {
-    "objectID": "competition.html#title-2-header",
-    "href": "competition.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics\n#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See ?@fig-bill-sizes for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
-  },
-  {
-    "objectID": "story_telling.html",
-    "href": "story_telling.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "story_telling.html#title-2-header",
-    "href": "story_telling.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Projects/project3.html",
-    "href": "Projects/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project3.html#elevator-pitch",
-    "href": "Projects/project3.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Projects/project3.html#questiontask-1",
-    "href": "Projects/project3.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project3.html#questiontask-2",
-    "href": "Projects/project3.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project3.html#questiontask-3",
-    "href": "Projects/project3.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project1.html",
-    "href": "Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#elevator-pitch",
-    "href": "Projects/project1.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-1",
-    "href": "Projects/project1.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-2",
-    "href": "Projects/project1.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-3",
-    "href": "Projects/project1.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project4.html",
-    "href": "Projects/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Projects/project4.html#elevator-pitch",
-    "href": "Projects/project4.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Projects/project4.html#questiontask-1",
-    "href": "Projects/project4.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project4.html#questiontask-2",
-    "href": "Projects/project4.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project4.html#questiontask-3",
-    "href": "Projects/project4.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "Physicist, Mathematician, Cambridge professor.\n\nisaac@applesdofall.org | My wikipedia page\n\n\n\nStanding on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples.\n\n\n\n\n1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow\n\n\n\n\n2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France\n\n\n\n\n\n\n1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001\n\n\n\n\n1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
-  },
-  {
-    "objectID": "resume.html#currently",
-    "href": "resume.html#currently",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "Standing on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples."
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow"
-  },
-  {
-    "objectID": "resume.html#awards",
-    "href": "resume.html#awards",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France"
-  },
-  {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001"
-  },
-  {
-    "objectID": "resume.html#occupation",
-    "href": "resume.html#occupation",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
-  },
-  {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "exploration.html#title-2-header",
-    "href": "exploration.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "cleansing.html",
-    "href": "cleansing.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "cleansing.html#title-2-header",
-    "href": "cleansing.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Projects/project5.html",
-    "href": "Projects/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Projects/project5.html#elevator-pitch",
-    "href": "Projects/project5.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Projects/project5.html#questiontask-1",
-    "href": "Projects/project5.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project5.html#questiontask-2",
-    "href": "Projects/project5.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project5.html#questiontask-3",
-    "href": "Projects/project5.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project2.html",
-    "href": "Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#elevator-pitch",
-    "href": "Projects/project2.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-1",
-    "href": "Projects/project2.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-2",
-    "href": "Projects/project2.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-3",
-    "href": "Projects/project2.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5"
-  },
-  {
-    "objectID": "projects.html#repo-for-all-my-projects",
-    "href": "projects.html#repo-for-all-my-projects",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5"
-  },
-  {
-    "objectID": "ml.html",
-    "href": "ml.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "ml.html#title-2-header",
-    "href": "ml.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "full_stack.html",
-    "href": "full_stack.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "full_stack.html#title-2-header",
-    "href": "full_stack.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Templates/DS250_Template.html",
-    "href": "Templates/DS250_Template.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Uncomment the entire section to use this template and rename this header with your project title\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
     "objectID": "Templates/DS350_Template.html",
     "href": "Templates/DS350_Template.html",
     "title": "Weekly Notes",
@@ -363,77 +7,46 @@
     "text": "Weekly Notes\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "450_projects.html",
-    "href": "450_projects.html",
-    "title": "DS450 Projects",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Diego Scarpa CV",
     "section": "",
-    "text": "Project 0\nProject 1\nProject 2\nProject 3\nProject 4\nProject 5\nProject 6",
-    "crumbs": [
-      "DS450 Projects"
-    ]
+    "text": "BYU-Idaho Student.\n\ndscarpa78b@gmail.com | Wood Pellet\n\n\n\nLondon Free Zone SA (Argentina)\n\n\nWood pellets\n\n\n\nBiomass, Cooking, Basketball.\n\n\n\n\n2021-2030 BYU Idaho, Idaho, USA.\n\n\n\n2004 Agustin Father, Derqui, Bs.As. Argentina\n\n\n\nNone\n\n\nNone\n\n\n\n2008\n\n\n\n\n2012 Manager, Misiones, Argentina"
   },
   {
-    "objectID": "450_projects.html#repo-for-all-my-projects",
-    "href": "450_projects.html#repo-for-all-my-projects",
-    "title": "DS450 Projects",
+    "objectID": "resume.html#currently",
+    "href": "resume.html#currently",
+    "title": "Diego Scarpa CV",
     "section": "",
-    "text": "Project 0\nProject 1\nProject 2\nProject 3\nProject 4\nProject 5\nProject 6",
-    "crumbs": [
-      "DS450 Projects"
-    ]
+    "text": "London Free Zone SA (Argentina)\n\n\nWood pellets\n\n\n\nBiomass, Cooking, Basketball."
   },
   {
-    "objectID": "250_projects.html",
-    "href": "250_projects.html",
-    "title": "DS250 Projects",
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Diego Scarpa CV",
     "section": "",
-    "text": "Project 0\nProject 1\nProject 2\nProject 3\nProject 4\nProject 5\nProject 6",
-    "crumbs": [
-      "DS250 Projects"
-    ]
+    "text": "2021-2030 BYU Idaho, Idaho, USA."
   },
   {
-    "objectID": "250_projects.html#repo-for-all-my-projects",
-    "href": "250_projects.html#repo-for-all-my-projects",
-    "title": "DS250 Projects",
+    "objectID": "resume.html#awards",
+    "href": "resume.html#awards",
+    "title": "Diego Scarpa CV",
     "section": "",
-    "text": "Project 0\nProject 1\nProject 2\nProject 3\nProject 4\nProject 5\nProject 6",
-    "crumbs": [
-      "DS250 Projects"
-    ]
+    "text": "2004 Agustin Father, Derqui, Bs.As. Argentina"
   },
   {
-    "objectID": "450_Projects/project2.html",
-    "href": "450_Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "resume.html#publications",
+    "href": "resume.html#publications",
+    "title": "Diego Scarpa CV",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS450 Projects",
-      "Project 2"
-    ]
+    "text": "None\n\n\nNone\n\n\n\n2008"
   },
   {
-    "objectID": "450_Projects/project1.html",
-    "href": "450_Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "resume.html#occupation",
+    "href": "resume.html#occupation",
+    "title": "Diego Scarpa CV",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS450 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "450_Projects/project4.html",
-    "href": "450_Projects/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS450 Projects",
-      "Project 4"
-    ]
+    "text": "2012 Manager, Misiones, Argentina"
   },
   {
     "objectID": "460_projects.html",
@@ -458,69 +71,14 @@
     ]
   },
   {
-    "objectID": "350_Projects/project2.html",
-    "href": "350_Projects/project2.html",
+    "objectID": "460_Projects/project5.html",
+    "href": "460_Projects/project5.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "DS350 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "350_Projects/project1.html",
-    "href": "350_Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "350_Projects/project4.html",
-    "href": "350_Projects/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project2.html",
-    "href": "250_Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project1.html",
-    "href": "250_Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project4.html",
-    "href": "250_Projects/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
+      "DS460 Projects",
+      "Project 5"
     ]
   },
   {
@@ -535,50 +93,6 @@
     ]
   },
   {
-    "objectID": "460_Projects/project0.html",
-    "href": "460_Projects/project0.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS460 Projects",
-      "Project 0"
-    ]
-  },
-  {
-    "objectID": "460_Projects/project5.html",
-    "href": "460_Projects/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS460 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "460_Projects/project6.html",
-    "href": "460_Projects/project6.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS460 Projects",
-      "Project 6"
-    ]
-  },
-  {
-    "objectID": "460_Projects/project4.html",
-    "href": "460_Projects/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS460 Projects",
-      "Project 4"
-    ]
-  },
-  {
     "objectID": "460_Projects/project1.html",
     "href": "460_Projects/project1.html",
     "title": "Client Report - [Insert Project Title]",
@@ -590,113 +104,23 @@
     ]
   },
   {
-    "objectID": "460_Projects/project2.html",
-    "href": "460_Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "450_projects.html",
+    "href": "450_projects.html",
+    "title": "DS450 Projects",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "Project 0\nProject 1\nProject 2\nProject 3\nProject 4\nProject 5\nProject 6",
     "crumbs": [
-      "DS460 Projects",
-      "Project 2"
+      "DS450 Projects"
     ]
   },
   {
-    "objectID": "250_Projects/project6.html",
-    "href": "250_Projects/project6.html",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "450_projects.html#repo-for-all-my-projects",
+    "href": "450_projects.html#repo-for-all-my-projects",
+    "title": "DS450 Projects",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "Project 0\nProject 1\nProject 2\nProject 3\nProject 4\nProject 5\nProject 6",
     "crumbs": [
-      "DS250 Projects",
-      "Project 6"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project5.html",
-    "href": "250_Projects/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project0.html",
-    "href": "250_Projects/project0.html",
-    "title": "Client Report - Introduction",
-    "section": "",
-    "text": "Introduction\n\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 0"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project3.html",
-    "href": "250_Projects/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "350_Projects/project6.html",
-    "href": "350_Projects/project6.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Project 6"
-    ]
-  },
-  {
-    "objectID": "350_Projects/project5.html",
-    "href": "350_Projects/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "350_Projects/project0.html",
-    "href": "350_Projects/project0.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Project 0"
-    ]
-  },
-  {
-    "objectID": "350_Projects/project3.html",
-    "href": "350_Projects/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "450_Projects/project6.html",
-    "href": "450_Projects/project6.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS450 Projects",
-      "Project 6"
+      "DS450 Projects"
     ]
   },
   {
@@ -711,17 +135,6 @@
     ]
   },
   {
-    "objectID": "450_Projects/project0.html",
-    "href": "450_Projects/project0.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS450 Projects",
-      "Project 0"
-    ]
-  },
-  {
     "objectID": "450_Projects/project3.html",
     "href": "450_Projects/project3.html",
     "title": "Client Report - [Insert Project Title]",
@@ -730,6 +143,17 @@
     "crumbs": [
       "DS450 Projects",
       "Project 3"
+    ]
+  },
+  {
+    "objectID": "450_Projects/project1.html",
+    "href": "450_Projects/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS450 Projects",
+      "Project 1"
     ]
   },
   {
@@ -753,25 +177,14 @@
     ]
   },
   {
-    "objectID": "350_Projects/week_09.html",
-    "href": "350_Projects/week_09.html",
+    "objectID": "350_Projects/week_12.html",
+    "href": "350_Projects/week_12.html",
     "title": "Weekly Notes",
     "section": "",
     "text": "Weekly Notes\n\n\n\n\n Back to top",
     "crumbs": [
       "DS350 Projects",
-      "Week 9"
-    ]
-  },
-  {
-    "objectID": "350_Projects/week_05.html",
-    "href": "350_Projects/week_05.html",
-    "title": "Weekly Notes",
-    "section": "",
-    "text": "Weekly Notes\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Week 5"
+      "Week 12"
     ]
   },
   {
@@ -786,69 +199,14 @@
     ]
   },
   {
-    "objectID": "350_Projects/week_12.html",
-    "href": "350_Projects/week_12.html",
+    "objectID": "350_Projects/week_08.html",
+    "href": "350_Projects/week_08.html",
     "title": "Weekly Notes",
     "section": "",
     "text": "Weekly Notes\n\n\n\n\n Back to top",
     "crumbs": [
       "DS350 Projects",
-      "Week 12"
-    ]
-  },
-  {
-    "objectID": "350_Projects/week_07.html",
-    "href": "350_Projects/week_07.html",
-    "title": "Weekly Notes",
-    "section": "",
-    "text": "Weekly Notes\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Week 7"
-    ]
-  },
-  {
-    "objectID": "350_Projects/week_02.html",
-    "href": "350_Projects/week_02.html",
-    "title": "Weekly Notes",
-    "section": "",
-    "text": "Weekly Notes\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Week 2"
-    ]
-  },
-  {
-    "objectID": "350_Projects/week_01.html",
-    "href": "350_Projects/week_01.html",
-    "title": "Weekly Notes",
-    "section": "",
-    "text": "Weekly Notes\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "350_Projects/week_03.html",
-    "href": "350_Projects/week_03.html",
-    "title": "Weekly Notes",
-    "section": "",
-    "text": "Weekly Notes\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Week 3"
-    ]
-  },
-  {
-    "objectID": "350_Projects/week_13.html",
-    "href": "350_Projects/week_13.html",
-    "title": "Weekly Notes",
-    "section": "",
-    "text": "Weekly Notes\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS350 Projects",
-      "Week 13"
+      "Week 8"
     ]
   },
   {
@@ -874,14 +232,165 @@
     ]
   },
   {
-    "objectID": "350_Projects/week_08.html",
-    "href": "350_Projects/week_08.html",
+    "objectID": "350_Projects/week_02.html",
+    "href": "350_Projects/week_02.html",
     "title": "Weekly Notes",
     "section": "",
     "text": "Weekly Notes\n\n\n\n\n Back to top",
     "crumbs": [
       "DS350 Projects",
-      "Week 8"
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "250_projects.html",
+    "href": "250_projects.html",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 0\nProject 1\nProject 2\nProject 3\nProject 4\nProject 5\nProject 6",
+    "crumbs": [
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "250_projects.html#repo-for-all-my-projects",
+    "href": "250_projects.html#repo-for-all-my-projects",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 0\nProject 1\nProject 2\nProject 3\nProject 4\nProject 5\nProject 6",
+    "crumbs": [
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project5.html",
+    "href": "250_Projects/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project3.html",
+    "href": "250_Projects/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project1.html",
+    "href": "250_Projects/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project0.html",
+    "href": "250_Projects/project0.html",
+    "title": "Client Report - Introduction",
+    "section": "",
+    "text": "Introduction\nThe Palmer penguins dataset is about three different species of penguins that live in a colony in the Palmer Archipelago, Antarctica. It contains information about the penguins’ body measurements, like beak length and depth, flipper length, and body mass. It also has information about the sex and age of the penguins.\n\n\nRead and format project data\n# Include and execute your code here\n\n\n\nfrom palmerpenguins import load_penguins\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\n\npenguins = load_penguins() #Loading the dataset\npenguins.head() #shows the first 5 rows\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n\n\n\n\n\n\n\nElevator Pitch\n\nThe analysis shows clear differences in BODY MASS and FLIPPER LENGHT among the three penguin species.Gentoo Penguins: They are the largest in body mass. Adelie and Chinstrap Penguins: They have similar sizes.\n\n\nRead and format data\n# Include and execute your code here\n# Include import statements here \n# Include reading data statements here\n\npenguins.info() #Displaying DataFrame info\n\n\n&lt;class 'pandas.core.frame.DataFrame'&gt;\nRangeIndex: 344 entries, 0 to 343\nData columns (total 8 columns):\n #   Column             Non-Null Count  Dtype  \n---  ------             --------------  -----  \n 0   species            344 non-null    object \n 1   island             344 non-null    object \n 2   bill_length_mm     342 non-null    float64\n 3   bill_depth_mm      342 non-null    float64\n 4   flipper_length_mm  342 non-null    float64\n 5   body_mass_g        342 non-null    float64\n 6   sex                333 non-null    object \n 7   year               344 non-null    int64  \ndtypes: float64(4), int64(1), object(3)\nmemory usage: 21.6+ KB\n\n\n\n\nplot example\n# Include and execute your code here\n\nfig = px.scatter(\n    data_frame=penguins, # Dataset to be used for the plot\n    x=\"flipper_length_mm\", # X-axis: \n    y=\"body_mass_g\", # Y-axis: \n    color=\"species\", # Color points by species\n    symbol=\"species\",  #Use different symbols for each species\n    size_max=10,  \n    opacity=0.7,  #transparency\n    trendline=\"ols\",   #Add a linear trendline (OLS)\n    trendline_scope=\"species\",  # Separate trendline for each species\n    labels={\n        \"flipper_length_mm\": \"Flipper Length (mm)\",\n        \"body_mass_g\": \"Body Mass (g)\",\n        \"species\": \"Species\"\n    },\n    title=\"Body Mass and Flipper Length&lt;br&gt;&lt;sup&gt;Dimensions for Adelie, Chinstrap, and Gentoo Penguins&lt;/sup&gt;\", # Plot title\n    color_discrete_sequence=px.colors.qualitative.Dark2\n)\n\nfig.show() # Display the chart\n\n\n                                                \nMy useless chart\n\n\n\n\nThis graph shows the relationship between flipper length (flipper_length_mm) and body mass (body_mass_g) of three species of penguins: Adelie, Chinstrap, and Gentoo.\n\n\ntable example\n# Include and execute your code here\n\npenguins.head(25) #the first 25 rows of the dataset.\n\n\n\n\n\n\nNot much of a table {#cell-Q1-table}\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n5\nAdelie\nTorgersen\n39.3\n20.6\n190.0\n3650.0\nmale\n2007\n\n\n6\nAdelie\nTorgersen\n38.9\n17.8\n181.0\n3625.0\nfemale\n2007\n\n\n7\nAdelie\nTorgersen\n39.2\n19.6\n195.0\n4675.0\nmale\n2007\n\n\n8\nAdelie\nTorgersen\n34.1\n18.1\n193.0\n3475.0\nNaN\n2007\n\n\n9\nAdelie\nTorgersen\n42.0\n20.2\n190.0\n4250.0\nNaN\n2007\n\n\n10\nAdelie\nTorgersen\n37.8\n17.1\n186.0\n3300.0\nNaN\n2007\n\n\n11\nAdelie\nTorgersen\n37.8\n17.3\n180.0\n3700.0\nNaN\n2007\n\n\n12\nAdelie\nTorgersen\n41.1\n17.6\n182.0\n3200.0\nfemale\n2007\n\n\n13\nAdelie\nTorgersen\n38.6\n21.2\n191.0\n3800.0\nmale\n2007\n\n\n14\nAdelie\nTorgersen\n34.6\n21.1\n198.0\n4400.0\nmale\n2007\n\n\n15\nAdelie\nTorgersen\n36.6\n17.8\n185.0\n3700.0\nfemale\n2007\n\n\n16\nAdelie\nTorgersen\n38.7\n19.0\n195.0\n3450.0\nfemale\n2007\n\n\n17\nAdelie\nTorgersen\n42.5\n20.7\n197.0\n4500.0\nmale\n2007\n\n\n18\nAdelie\nTorgersen\n34.4\n18.4\n184.0\n3325.0\nfemale\n2007\n\n\n19\nAdelie\nTorgersen\n46.0\n21.5\n194.0\n4200.0\nmale\n2007\n\n\n20\nAdelie\nBiscoe\n37.8\n18.3\n174.0\n3400.0\nfemale\n2007\n\n\n21\nAdelie\nBiscoe\n37.7\n18.7\n180.0\n3600.0\nmale\n2007\n\n\n22\nAdelie\nBiscoe\n35.9\n19.2\n189.0\n3800.0\nfemale\n2007\n\n\n23\nAdelie\nBiscoe\n38.2\n18.1\n185.0\n3950.0\nmale\n2007\n\n\n24\nAdelie\nBiscoe\n38.8\n17.2\n180.0\n3800.0\nmale\n2007\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Project 0"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project2.html",
+    "href": "250_Projects/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project4.html",
+    "href": "250_Projects/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project6.html",
+    "href": "250_Projects/project6.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 6"
+    ]
+  },
+  {
+    "objectID": "350_Projects/week_01.html",
+    "href": "350_Projects/week_01.html",
+    "title": "Weekly Notes",
+    "section": "",
+    "text": "Weekly Notes\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS350 Projects",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "350_Projects/week_03.html",
+    "href": "350_Projects/week_03.html",
+    "title": "Weekly Notes",
+    "section": "",
+    "text": "Weekly Notes\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS350 Projects",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "350_Projects/week_05.html",
+    "href": "350_Projects/week_05.html",
+    "title": "Weekly Notes",
+    "section": "",
+    "text": "Weekly Notes\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS350 Projects",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "350_Projects/week_07.html",
+    "href": "350_Projects/week_07.html",
+    "title": "Weekly Notes",
+    "section": "",
+    "text": "Weekly Notes\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS350 Projects",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "350_Projects/week_09.html",
+    "href": "350_Projects/week_09.html",
+    "title": "Weekly Notes",
+    "section": "",
+    "text": "Weekly Notes\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS350 Projects",
+      "Week 9"
     ]
   },
   {
@@ -894,5 +403,132 @@
       "DS350 Projects",
       "Week 11"
     ]
+  },
+  {
+    "objectID": "350_Projects/week_13.html",
+    "href": "350_Projects/week_13.html",
+    "title": "Weekly Notes",
+    "section": "",
+    "text": "Weekly Notes\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS350 Projects",
+      "Week 13"
+    ]
+  },
+  {
+    "objectID": "450_Projects/project0.html",
+    "href": "450_Projects/project0.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS450 Projects",
+      "Project 0"
+    ]
+  },
+  {
+    "objectID": "450_Projects/project2.html",
+    "href": "450_Projects/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS450 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "450_Projects/project4.html",
+    "href": "450_Projects/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS450 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "450_Projects/project6.html",
+    "href": "450_Projects/project6.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS450 Projects",
+      "Project 6"
+    ]
+  },
+  {
+    "objectID": "460_Projects/project0.html",
+    "href": "460_Projects/project0.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS460 Projects",
+      "Project 0"
+    ]
+  },
+  {
+    "objectID": "460_Projects/project2.html",
+    "href": "460_Projects/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS460 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "460_Projects/project4.html",
+    "href": "460_Projects/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS460 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "460_Projects/project6.html",
+    "href": "460_Projects/project6.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS460 Projects",
+      "Project 6"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "index.html#title-2-header",
+    "href": "index.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "Templates/DS250_Template.html",
+    "href": "Templates/DS250_Template.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Uncomment the entire section to use this template and rename this header with your project title\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "week2_ejemplo.html",
+    "href": "week2_ejemplo.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "!pip install palmerpenguins\n!pip install setuptools\n\nimport pandas as pd\nimport numpy as np\nimport pandas as pd\nfrom palmerpenguins import load_penguins\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\n\nRequirement already satisfied: palmerpenguins in c:\\users\\admin\\appdata\\local\\programs\\python\\python312\\lib\\site-packages (0.1.4)\nRequirement already satisfied: pandas in c:\\users\\admin\\appdata\\local\\programs\\python\\python312\\lib\\site-packages (from palmerpenguins) (2.1.4)\nRequirement already satisfied: numpy in c:\\users\\admin\\appdata\\local\\programs\\python\\python312\\lib\\site-packages (from palmerpenguins) (1.26.3)\nRequirement already satisfied: python-dateutil&gt;=2.8.2 in c:\\users\\admin\\appdata\\local\\programs\\python\\python312\\lib\\site-packages (from pandas-&gt;palmerpenguins) (2.8.2)\nRequirement already satisfied: pytz&gt;=2020.1 in c:\\users\\admin\\appdata\\local\\programs\\python\\python312\\lib\\site-packages (from pandas-&gt;palmerpenguins) (2023.3.post1)\nRequirement already satisfied: tzdata&gt;=2022.1 in c:\\users\\admin\\appdata\\local\\programs\\python\\python312\\lib\\site-packages (from pandas-&gt;palmerpenguins) (2023.4)\nRequirement already satisfied: six&gt;=1.5 in c:\\users\\admin\\appdata\\local\\programs\\python\\python312\\lib\\site-packages (from python-dateutil&gt;=2.8.2-&gt;pandas-&gt;palmerpenguins) (1.16.0)\nRequirement already satisfied: setuptools in c:\\users\\admin\\appdata\\local\\programs\\python\\python312\\lib\\site-packages (75.1.0)\n\n\n\npenguins = load_penguins()\npenguins\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n339\nChinstrap\nDream\n55.8\n19.8\n207.0\n4000.0\nmale\n2009\n\n\n340\nChinstrap\nDream\n43.5\n18.1\n202.0\n3400.0\nfemale\n2009\n\n\n341\nChinstrap\nDream\n49.6\n18.2\n193.0\n3775.0\nmale\n2009\n\n\n342\nChinstrap\nDream\n50.8\n19.0\n210.0\n4100.0\nmale\n2009\n\n\n343\nChinstrap\nDream\n50.2\n18.7\n198.0\n3775.0\nfemale\n2009\n\n\n\n\n344 rows × 8 columns\n\n\n\n\npenguins.head(10)\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n5\nAdelie\nTorgersen\n39.3\n20.6\n190.0\n3650.0\nmale\n2007\n\n\n6\nAdelie\nTorgersen\n38.9\n17.8\n181.0\n3625.0\nfemale\n2007\n\n\n7\nAdelie\nTorgersen\n39.2\n19.6\n195.0\n4675.0\nmale\n2007\n\n\n8\nAdelie\nTorgersen\n34.1\n18.1\n193.0\n3475.0\nNaN\n2007\n\n\n9\nAdelie\nTorgersen\n42.0\n20.2\n190.0\n4250.0\nNaN\n2007\n\n\n\n\n\n\n\n\n(\n    ggplot(data=penguins, \n    mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point()\n)\n\n\n   \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n(\n    ggplot(\n        data=penguins,\n        mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\"),\n    )\n    + geom_point()\n)\n\n\n   \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n(\n    ggplot(\n        data=penguins,\n        mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\"),\n    )\n    + geom_point()\n    + geom_smooth(method=\"lm\")\n)\n\n\n   \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(mapping=aes(color=\"species\"))\n    + geom_smooth(method=\"lm\")\n)\n\n\n   \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(mapping=aes(color=\"species\", shape=\"species\"))\n    + geom_smooth(method=\"lm\")\n)\n\n\n   \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(aes(color=\"species\", shape=\"species\"))\n    + geom_smooth(method=\"lm\")\n    + labs(\n        title=\"Body mass and flipper length\",\n        subtitle=\"Dimensions for Adelie, Chinstrap, and Gentoo Penguins\",\n        x=\"Flipper length (mm)\",\n        y=\"Body mass (g)\",\n        color=\"Species\",\n        shape=\"Species\",\n    )\n)\n\n\n   \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\nfrom lets_plot import *\n\n\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n\n    + geom_point(aes(color=\"species\", shape=\"species\"), size=3, alpha=0.7)\n\n    + geom_smooth(aes(color=\"species\"), method=\"lm\", se=True) \n\n    + labs(\n        title=\"Body Mass and Flipper Length\",\n        subtitle=\"Dimensions for Adelie, Chinstrap, and Gentoo Penguins\",\n        x=\"Flipper Length (mm)\",\n        y=\"Body Mass (g)\",\n        color=\"Species\",\n        shape=\"Species\",\n    )\n    + theme_minimal()\n\n    + scale_color_brewer(palette=\"Dark2\")  \n)\n\n\n   \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\n\n Back to top"
   }
 ]

@@ -80,7 +80,7 @@ penguins.info() #Displaying DataFrame info
 ```{python}
 #| label: Q1-chart
 #| code-summary: plot example
-#| fig-cap: "My useless chart"
+#| fig-cap: "Project0 chart"
 #| fig-align: center
 # Include and execute your code here
 
@@ -89,7 +89,7 @@ fig = px.scatter(
     x="flipper_length_mm", # X-axis: 
     y="body_mass_g", # Y-axis: 
     color="species", # Color points by species
-    symbol="species",  Use different symbols for each species
+    symbol="species",  #Use different symbols for each species
     size_max=10,  
     opacity=0.7,  #transparency
     trendline="ols",   #Add a linear trendline (OLS)
@@ -100,7 +100,7 @@ fig = px.scatter(
         "species": "Species"
     },
     title="Body Mass and Flipper Length<br><sup>Dimensions for Adelie, Chinstrap, and Gentoo Penguins</sup>", # Plot title
-    color_discrete_sequence=px.colors.qualitative.Colorblind  
+    color_discrete_sequence=px.colors.qualitative.Dark2
 )
 
 fig.show() # Display the chart
