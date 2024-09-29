@@ -26,40 +26,44 @@ execute:
 ---
 
 ### Introduction
+The Palmer penguins dataset is about three different species of penguins that live in a colony in the Palmer Archipelago, Antarctica. It contains information about the penguins' body measurements, like beak length and depth, flipper length, and body mass. It also has information about the sex and age of the penguins.
 
-<!-- highlight line 31 to the end and use ctrl + / (win) or command + / (mac) to uncomment out the code below, the same shortcut can be used to comment out code again. -->
-<!-- 
+ 
 ```{python}
 #| label: libraries
 #| include: false
+
+
 import pandas as pd
 import numpy as np
 import plotly.express as px
+
+!pip install palmerpenguins
+!pip install setuptools
+
 ```
 
 ```{python}
 #| label: project-data
 #| code-summary: Read and format project data
 # Include and execute your code here
-!pip install palmerpenguins
-!pip install setuptools
+
+
 
 from palmerpenguins import load_penguins
 from lets_plot import *
 
 LetsPlot.setup_html(isolated_frame=True)
-penguins = load_penguins()
-df= pd.DataFrame(penguins)
+
+penguins = load_penguins() #Loading the dataset
+penguins.head() #shows the first 5 rows
+
 ```
 
 
-### QUESTION|TASK 1
+### Elevator Pitch
 
-A short Elevator Pitch
-
-The analysis shows clear differences in BODY MASS and FLIPPER LENGHT among the three penguin species.
-     Gentoo Penguins: They are the largest in body mass.
-     Adelie and Chinstrap Penguins: They have similar sizes.
+#### The analysis shows clear differences in BODY MASS and FLIPPER LENGHT among the three penguin species.Gentoo Penguins: They are the largest in body mass. Adelie and Chinstrap Penguins: They have similar sizes.
 
 
 ```{python}
@@ -69,21 +73,7 @@ The analysis shows clear differences in BODY MASS and FLIPPER LENGHT among the t
 # Include import statements here 
 # Include reading data statements here
 
-!pip install palmerpenguins
-!pip install setuptools
-
-import pandas as pd
-import numpy as np
-import pandas as pd
-from palmerpenguins import load_penguins
-from lets_plot import *
-
-LetsPlot.setup_html(isolated_frame=True)
-
-penguins = load_penguins()
-
-
-
+penguins.info() #Displaying DataFrame info
 
 ```
 
@@ -93,29 +83,31 @@ penguins = load_penguins()
 #| fig-cap: "My useless chart"
 #| fig-align: center
 # Include and execute your code here
-(
-    ggplot(data=penguins, mapping=aes(x="flipper_length_mm", y="body_mass_g"))
 
-    + geom_point(aes(color="species", shape="species"), size=3, alpha=0.7)
-
-    + geom_smooth(aes(color="species"), method="lm", se=True) 
-
-    + labs(
-        title="Body Mass and Flipper Length",
-        subtitle="Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
-        x="Flipper Length (mm)",
-        y="Body Mass (g)",
-        color="Species",
-        shape="Species",
-    )
-    + theme_minimal()
-      
-    + scale_color_brewer(palette="Dark2")  
+fig = px.scatter(
+    data_frame=penguins, # Dataset to be used for the plot
+    x="flipper_length_mm", # X-axis: 
+    y="body_mass_g", # Y-axis: 
+    color="species", # Color points by species
+    symbol="species",  Use different symbols for each species
+    size_max=10,  
+    opacity=0.7,  #transparency
+    trendline="ols",   #Add a linear trendline (OLS)
+    trendline_scope="species",  # Separate trendline for each species
+    labels={
+        "flipper_length_mm": "Flipper Length (mm)",
+        "body_mass_g": "Body Mass (g)",
+        "species": "Species"
+    },
+    title="Body Mass and Flipper Length<br><sup>Dimensions for Adelie, Chinstrap, and Gentoo Penguins</sup>", # Plot title
+    color_discrete_sequence=px.colors.qualitative.Colorblind  
 )
+
+fig.show() # Display the chart
 
 ```
 
-This graph shows the relationship between flipper length (flipper_length_mm) and body mass (body_mass_g) of three species of penguins: Adelie, Chinstrap, and Gentoo.
+#### This graph shows the relationship between flipper length (flipper_length_mm) and body mass (body_mass_g) of three species of penguins: Adelie, Chinstrap, and Gentoo.
 
 ```{python}
 #| label: Q1-table
@@ -124,108 +116,7 @@ This graph shows the relationship between flipper length (flipper_length_mm) and
 #| tbl-cap-location: top
 # Include and execute your code here
 
-penguins
-
-```
-
-
-
-### QUESTION|TASK 2
-
-__TODO: COPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE__
-
-_TODO: type your results and analysis here_
-
-_TODO and REMOVE: remove any cells not relavent to this question_
-
-```{python}
-#| label: Q2
-#| code-summary: Read and format data
-# Include and execute your code here
+penguins.head(25) #the first 25 rows of the dataset.
 
 
 ```
-
-```{python}
-#| label: Q2-chart
-#| code-summary: plot example
-#| fig-cap: "My useless chart"
-#| fig-align: center
-# Include and execute your code here
-
-#chart = px.bar(df.head(200),
-#    x="name", 
-#    y="AK"
-#)
-#chart.show()
-```
-
-_REMOVE ME: the output of any code cell will appear below the cell, including tables and charts_
-
-```{python}
-#| label: Q2-table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-#mydat = df.head(1000)\
-#    .groupby('year')\
-#    .sum()\
-#    .reset_index()\
-#    .tail(10)\
-#    .filter(["year", "AK","AR"])
-
-#display(mydat)
-
-```
-
-_REMOVE ME: the output of any code cell will appear below the cell, including tables and charts_
-
-### QUESTION|TASK 3
-
-__TODO: COPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE__
-
-_TODO: type your results and analysis here_
-
-_TODO and REMOVE: remove any cells not relavent to this question_
-
-```{python}
-#| label: Q3
-#| code-summary: Read and format data
-# Include and execute your code here
-
-
-```
-
-```{python}
-#| label: Q3-chart
-#| code-summary: plot example
-#| fig-cap: "My useless chart"
-#| fig-align: center
-# Include and execute your code here
-#chart = px.bar(df.head(200),
-#    x="name", 
-#    y="AK"
-#)
-#chart.show()
-```
-
-_REMOVE ME: the output of any code cell will appear below the cell, including tables and charts_
-
-```{python}
-#| label: Q3-table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-#mydat = df.head(1000)\
-#    .groupby('year')\
-#    .sum()\
-#    .reset_index()\
-#    .tail(10)\
-#    .filter(["year", "AK","AR"])
-#
-#display(mydat)
-
-``` 
-_REMOVE ME: the output of any code cell will appear below the cell, including tables and charts_ -->
