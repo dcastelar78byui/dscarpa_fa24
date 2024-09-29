@@ -67,7 +67,7 @@ penguins.head() #shows the first 5 rows
 
 
 ```{python}
-#| label: Q1
+#| label: Q1_
 #| code-summary: Read and format data
 # Include and execute your code here
 # Include import statements here 
